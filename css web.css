@@ -1,0 +1,162 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	background:url(background.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-family:helvetica,arial,sans-serif;
+	font-size:15px;
+}
+p{
+	margin-bottom:20px;
+	line-height:1.5em;
+}
+h3{
+	margin-bottom:20px;
+	border-bottom:1px solid #aaa;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+a:hover{
+	color:#666;
+}
+.container{
+	max-width: 1080px;
+	margin:20px auto;
+	background:none;
+	overflow:hidden;
+	padding:10px;
+}
+.header{
+	background:none;
+	padding:10px;
+	margin:10px;
+	display:block;
+}
+div.menu ul {
+	overflow:hidden;
+	list-style: none;
+	padding:10px;
+	margin:10px;
+	background:#CD853F ;
+}
+ 
+div.menu ul li {
+	margin:10px;
+	float:left;
+}
+ 
+div.menu ul a {
+	padding:10px;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+ 
+div.menu ul a:hover {
+	text-decoration: underline;
+	background:brown;
+}
+
+.middle{
+	width:750px;
+	background:#F4A460;
+	padding:10px;
+	margin:10px;
+	float:left;
+}
+.middle img{
+	max-width:100%;
+	height:auto;
+}
+.middle a{
+	font-weight:bold;
+}
+.right{
+	width:250px;
+	padding:10px;
+	margin:10px;
+	background: #F4A460;
+	float:left;
+}
+.right ul{
+	list-style-type:none;
+}
+.right ul li{
+	display:block;
+}
+.right ul li a{
+	display:block;
+	margin-bottom:10px;
+	padding:10px 5px;
+}
+.right ul li a:hover{
+	color:brown;
+}
+.footer{
+	clear:both;
+	background:#D2691E;
+	padding:10px;
+	margin:10px;
+}
+/*untuk ukuran 1080px kebawah*/
+@media screen and (max-width:1080px) {
+	.container{
+		width:100%;
+	}
+	div.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+	.middle{
+		width:68%;
+		float:right;
+	}
+	.right{
+		clear:both;
+		padding:1% 4%;
+		width:auto;
+		float:none;
+	}
+}
+/*untuk ukuran layar 700px kebawah*/
+@media screen and(max-width:780px) {
+	.header,.footer{
+		text-align:center;
+	}
+	div.menu ul {
+		width: 100%;
+	}
+ 
+	div.menu ul {
+		float:inherit;
+	}
+ 
+	div.menu ul li {
+		float:inherit;
+		margin:10px;
+	}
+ 
+	div.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+	.middle{
+		width:auto;
+		float:none;
+	}
+	.right{
+		width:auto;
+		float:none;
+	}
+}
